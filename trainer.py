@@ -857,6 +857,8 @@ def main(args):
         val_check_interval=args.val_check_interval,
     )
 
+    torch.cuda.empty_cache() # Giải phóng bộ nhớ
+
     trainer.fit(
         model,
         ckpt_path=args.ckpt_path,
