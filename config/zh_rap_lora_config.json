@@ -1,5 +1,5 @@
 {
-    "r": 256,
+    "r": 16,
     "lora_alpha": 32,
     "target_modules": [
         "speaker_embedder",
